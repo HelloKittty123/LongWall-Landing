@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Long Wall Technology - Cloud Engineering and Software Development
+        </title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/styles.css" />
+    </head>
+    <body class="bg-white text-gray-900">
+        <!-- Header -->
+        <header
+            id="header"
+            class="fixed top-0 w-full z-50 bg-white backdrop-blur-md shadow-lg transition-transform duration-300"
+        >
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-2">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img
+                            src="assets/images/logo.jpg"
+                            class="w-[100px] h-[62px] cursor-pointer"
+                        />
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex items-center space-x-8">
+                        <!-- Services Dropdown -->
+                        <div class="relative group">
+                            <a
+                                href="#services"
+                                class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 relative py-2 flex items-center"
+                            >
+                                Services
+                                <svg
+                                    class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M19 9l-7 7-7-7"
+                                    ></path>
+                                </svg>
+                                <span
+                                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+                                ></span>
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute top-full left-0 mt-2 w-[350px] bg-white rounded-2xl shadow-2xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50"
+                            >
+                                <div class="px-4 py-5">
+                                    <div class="grid grid-cols-1 gap-4">
+                                        <a
+                                            href="#"
+                                            class="flex items-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-200 group/item"
+                                        >
+                                            <div
+                                                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300"
+                                            >
+                                                <span class="text-white text-lg"
+                                                    >💻</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4
+                                                    class="font-semibold text-gray-900 group-hover/item:text-blue-600 transition-colors duration-200"
+                                                >
+                                                    Mobile App Development
+                                                </h4>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            class="flex items-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-200 group/item"
+                                        >
+                                            <div
+                                                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300"
+                                            >
+                                                <span class="text-white text-lg"
+                                                    >🚀</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4
+                                                    class="font-semibold text-gray-900 group-hover/item:text-purple-600 transition-colors duration-200"
+                                                >
+                                                    AWS Cloud
+                                                </h4>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            class="flex items-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-200 group/item"
+                                        >
+                                            <div
+                                                class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300"
+                                            >
+                                                <span class="text-white text-lg"
+                                                    >⚡</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4
+                                                    class="font-semibold text-gray-900 group-hover/item:text-green-600 transition-colors duration-200"
+                                                >
+                                                    Azure Cloud
+                                                </h4>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            class="flex items-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-200 group/item"
+                                        >
+                                            <div
+                                                class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300"
+                                            >
+                                                <span class="text-white text-lg"
+                                                    >📊</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <h4
+                                                    class="font-semibold text-gray-900 group-hover/item:text-orange-600 transition-colors duration-200"
+                                                >
+                                                    Google Cloud
+                                                </h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a
+                            href="#about"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative group"
+                        >
+                            About
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+                            ></span>
+                        </a>
+                        <a
+                            href="#careers"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative group"
+                        >
+                            Contact
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+                            ></span>
+                        </a>
+                        <a
+                            href="#insights"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors relative group"
+                        >
+                            Insights
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"
+                            ></span>
+                        </a>
+                        <a
+                            href="#contact"
+                            class="gradient-cta text-white px-6 py-3 rounded-full font-semibold transition-all hover:-translate-y-1 hover:shadow-xl"
+                        >
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button
+                        id="mobile-menu-btn"
+                        class="lg:hidden p-2 rounded-md hover:bg-gray-100"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                    <div class="flex flex-col space-y-3">
+                        <a
+                            href="#services"
+                            class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b border-gray-200"
+                            >Services</a
+                        >
+                        <a
+                            href="#about"
+                            class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b border-gray-200"
+                            >About</a
+                        >
+                        <a
+                            href="#careers"
+                            class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b border-gray-200"
+                            >Contact</a
+                        >
+                        <a
+                            href="#insights"
+                            class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b border-gray-200"
+                            >Insights</a
+                        >
+                        <a
+                            href="#contact"
+                            class="gradient-cta text-white px-6 py-3 rounded-full font-semibold text-center mt-4"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white relative overflow-hidden pt-20">
+            <div class="hero-pattern absolute inset-0 opacity-30"></div>
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10"
+            >
+                <div class="text-center">
+                    <h1
+                        class="hero-animation text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
+                    >
+                        Bridging World-Class Technology<br
+                            class="hidden sm:block"
+                        />
+                        <span
+                            class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
+                        >
+                            and Tangible Business Impact
+                        </span>
+                    </h1>
+                    <p
+                        class="hero-animation-delay-1 text-lg sm:text-xl lg:text-2xl mb-8 opacity-90 max-w-3xl mx-auto"
+                    >
+                        Let's build something together
+                    </p>
+                    <div
+                        class="hero-animation-delay-2 flex flex-col sm:flex-row gap-4 justify-center"
+                    >
+                        <a
+                            href="#"
+                            class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all hover:-translate-y-1 hover:shadow-2xl"
+                        >
+                            Accelerate With Us
+                        </a>
+                        <a
+                            href="#"
+                            class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:bg-white hover:text-gray-900 hover:-translate-y-1"
+                        >
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 sm:py-24 lg:py-32 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="fade-in text-center mb-16">
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900"
+                    >
+                        KMS End-to-End Technology Solutions
+                    </h2>
+                    <p
+                        class="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto"
+                    >
+                        We drive impact at every stage of your SDLC and tech
+                        journey through our digital engineering services.
+                    </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+                >
+                    <!-- Service Card 1 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">💻</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Custom Software Development
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Expert-built, market-ready solutions that accelerate
+                            your business impact. We don't just build
+                            software—we launch game-changers.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">🚀</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Digital Transformation
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Transform your business with cutting-edge technology
+                            solutions designed to scale and adapt to market
+                            demands.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">⚡</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Cloud & DevOps
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Accelerate deployment and scaling with robust cloud
+                            infrastructure and automated development operations.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">📊</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Data & Analytics
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Unlock the power of your data with advanced
+                            analytics and machine learning solutions for
+                            informed decision making.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">🔒</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Cybersecurity
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Protect your digital assets with comprehensive
+                            security solutions and best practices
+                            implementation.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div
+                        class="fade-in service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl border border-blue-100 hover:border-blue-300"
+                    >
+                        <div
+                            class="w-16 h-16 gradient-cta rounded-xl flex items-center justify-center mb-6"
+                        >
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Quality Assurance
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ensure flawless software delivery with comprehensive
+                            testing strategies and quality assurance processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section
+            id="about"
+            class="py-20 sm:py-24 lg:py-32 bg-white relative overflow-hidden"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div
+                    class="text-center mb-20 opacity-0 translate-y-10 transition-all duration-1000"
+                    data-aos="fade-up"
+                >
+                    <h2
+                        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 text-gray-900 leading-tight"
+                    >
+                        About
+                        <span
+                            class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                            >Long wall Technology</span
+                        >
+                    </h2>
+                    <p
+                        class="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+                    >
+                        Empowering businesses worldwide with innovative
+                        technology solutions since 2009
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center"
+                >
+                    <!-- Content -->
+                    <div
+                        class="opacity-0 translate-y-10 transition-all duration-1000"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div class="space-y-8">
+                            <div class="space-y-6">
+                                <h3
+                                    class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight"
+                                >
+                                    We're more than just a software company
+                                </h3>
+                                <p
+                                    class="text-lg text-gray-600 leading-relaxed"
+                                >
+                                    At KMS Technology, we believe in the
+                                    transformative power of technology. For over
+                                    15 years, we've been partnering with
+                                    businesses to turn their boldest ideas into
+                                    reality through cutting-edge software
+                                    solutions.
+                                </p>
+                                <p
+                                    class="text-lg text-gray-600 leading-relaxed"
+                                >
+                                    Our team of world-class engineers,
+                                    designers, and strategists work
+                                    collaboratively to deliver solutions that
+                                    don't just meet expectations—they exceed
+                                    them and drive real business impact.
+                                </p>
+                            </div>
+
+                            <!-- Key Points -->
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mt-1 flex-shrink-0"
+                                    >
+                                        <svg
+                                            class="w-4 h-4 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="3"
+                                                d="M5 13l4 4L19 7"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="text-lg font-semibold text-gray-900 mb-1"
+                                        >
+                                            Innovation-First Approach
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            We stay ahead of technology trends
+                                            to deliver future-ready solutions
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center mt-1 flex-shrink-0"
+                                    >
+                                        <svg
+                                            class="w-4 h-4 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="3"
+                                                d="M5 13l4 4L19 7"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="text-lg font-semibold text-gray-900 mb-1"
+                                        >
+                                            Client-Centric Partnership
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            Your success is our success. We
+                                            build lasting relationships, not
+                                            just software
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center mt-1 flex-shrink-0"
+                                    >
+                                        <svg
+                                            class="w-4 h-4 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="3"
+                                                d="M5 13l4 4L19 7"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="text-lg font-semibold text-gray-900 mb-1"
+                                        >
+                                            Global Expertise, Local Impact
+                                        </h4>
+                                        <p class="text-gray-600">
+                                            Serving clients worldwide while
+                                            understanding local market needs
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                                <a
+                                    href="#contact"
+                                    class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-center"
+                                >
+                                    Work With Us
+                                </a>
+                                <a
+                                    href="#"
+                                    class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:scale-105 text-center"
+                                >
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Content -->
+                    <div
+                        class="opacity-0 translate-y-10 transition-all duration-1000"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <div class="relative">
+                            <!-- Main Image Placeholder -->
+                            <div
+                                class="bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 rounded-3xl p-12 relative overflow-hidden"
+                            >
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10"
+                                ></div>
+
+                                <!-- Team Illustration -->
+                                <div
+                                    class="relative z-10 text-center space-y-8"
+                                >
+                                    <!-- Icons representing team -->
+                                    <div class="flex justify-center space-x-4">
+                                        <div
+                                            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center"
+                                        >
+                                            <span class="text-2xl">👨‍💻</span>
+                                        </div>
+                                        <div
+                                            class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center"
+                                        >
+                                            <span class="text-2xl">👩‍💼</span>
+                                        </div>
+                                        <div
+                                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center"
+                                        >
+                                            <span class="text-2xl">👨‍🎨</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div class="space-y-4">
+                                        <h4
+                                            class="text-2xl font-bold text-gray-800"
+                                        >
+                                            200+ Expert Engineers
+                                        </h4>
+                                        <p
+                                            class="text-gray-600 leading-relaxed"
+                                        >
+                                            Our diverse team brings together the
+                                            best minds in technology, design,
+                                            and business strategy to deliver
+                                            exceptional results.
+                                        </p>
+                                    </div>
+
+                                    <!-- Technology Stack Icons -->
+                                    <div class="grid grid-cols-4 gap-4 pt-6">
+                                        <div
+                                            class="bg-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                                        >
+                                            <div class="text-2xl text-center">
+                                                ⚛️
+                                            </div>
+                                            <p
+                                                class="text-xs text-gray-600 text-center mt-1"
+                                            >
+                                                React
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="bg-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                                        >
+                                            <div class="text-2xl text-center">
+                                                📱
+                                            </div>
+                                            <p
+                                                class="text-xs text-gray-600 text-center mt-1"
+                                            >
+                                                Mobile
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="bg-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                                        >
+                                            <div class="text-2xl text-center">
+                                                ☁️
+                                            </div>
+                                            <p
+                                                class="text-xs text-gray-600 text-center mt-1"
+                                            >
+                                                Cloud
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="bg-white rounded-xl p-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                                        >
+                                            <div class="text-2xl text-center">
+                                                🤖
+                                            </div>
+                                            <p
+                                                class="text-xs text-gray-600 text-center mt-1"
+                                            >
+                                                AI/ML
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Elements -->
+                            <div
+                                class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-80 animate-pulse"
+                            ></div>
+                            <div
+                                class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-pink-400 to-red-500 rounded-full opacity-60 animate-pulse"
+                                style="animation-delay: 1s"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Values -->
+                <div
+                    class="mt-24 opacity-0 translate-y-10 transition-all duration-1000"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                >
+                    <div class="text-center mb-16">
+                        <h3
+                            class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+                        >
+                            Our Core Values
+                        </h3>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                            These principles guide everything we do and shape
+                            how we work with our clients and each other
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Value 1 -->
+                        <div class="text-center group">
+                            <div
+                                class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <span class="text-3xl">🎯</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">
+                                Excellence
+                            </h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                We strive for perfection in every line of code,
+                                every design, and every client interaction
+                            </p>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div class="text-center group">
+                            <div
+                                class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <span class="text-3xl">🤝</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">
+                                Collaboration
+                            </h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                Success comes from working together, sharing
+                                knowledge, and building strong partnerships
+                            </p>
+                        </div>
+
+                        <!-- Value 3 -->
+                        <div class="text-center group">
+                            <div
+                                class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <span class="text-3xl">🚀</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">
+                                Innovation
+                            </h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                We embrace new technologies and creative
+                                solutions to solve complex challenges
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="gradient-dark text-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="fade-in">
+                        <h3
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-400 mb-2"
+                            data-target="500"
+                        >
+                            0+
+                        </h3>
+                        <p class="text-lg sm:text-xl opacity-90">
+                            Projects Delivered
+                        </p>
+                    </div>
+                    <div class="fade-in">
+                        <h3
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-400 mb-2"
+                            data-target="15"
+                        >
+                            0+
+                        </h3>
+                        <p class="text-lg sm:text-xl opacity-90">
+                            Years Experience
+                        </p>
+                    </div>
+                    <div class="fade-in">
+                        <h3
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-400 mb-2"
+                            data-target="200"
+                        >
+                            0+
+                        </h3>
+                        <p class="text-lg sm:text-xl opacity-90">
+                            Expert Engineers
+                        </p>
+                    </div>
+                    <div class="fade-in">
+                        <h3
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-400 mb-2"
+                            data-target="98"
+                        >
+                            0%
+                        </h3>
+                        <p class="text-lg sm:text-xl opacity-90">
+                            Client Satisfaction
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="gradient-cta text-white py-16 sm:py-24 lg:py-32">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Ready to Build Something Extraordinary?
+                    </h2>
+                    <p class="text-lg sm:text-xl mb-8 opacity-90">
+                        Partner with Long Wall Technology to transform your
+                        vision into reality
+                    </p>
+                    <a
+                        href="#"
+                        class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg transition-all hover:-translate-y-1 hover:shadow-2xl inline-block"
+                    >
+                        Start Your Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <!-- Footer Content -->
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
+                >
+                    <!-- Services -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400">
+                            Services
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Software Development</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Digital Transformation</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Cloud Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Quality Assurance</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Data Analytics</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400">
+                            Company
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Leadership</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >News & Events</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400">
+                            Resources
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Case Studies</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Insights</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Whitepapers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Documentation</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Connect -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-400">
+                            Connect
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >YouTube</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-gray-300 hover:text-blue-400 transition-colors"
+                                    >GitHub</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="border-t border-gray-800 pt-8 text-center">
+                    <p class="text-gray-400">
+                        &copy; 2025 KMS Technology. All rights reserved. |
+                        <a
+                            href="#"
+                            class="hover:text-blue-400 transition-colors"
+                            >Privacy Policy</a
+                        >
+                        |
+                        <a
+                            href="#"
+                            class="hover:text-blue-400 transition-colors"
+                            >Terms of Service</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
