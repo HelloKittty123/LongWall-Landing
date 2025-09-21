@@ -124,3 +124,37 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
         mobileMenu.classList.add("hidden");
     });
 });
+
+// Partners Continuous Transition - Simplified
+class PartnersTransition {
+    constructor() {
+        this.slider = document.getElementById("partners-slider");
+
+        if (this.slider) {
+            this.init();
+        }
+    }
+
+    init() {
+        // The CSS animation handles the continuous transition
+        // We only need to handle hover pause/resume
+        // this.slider.addEventListener('mouseenter', () => {
+        //     this.slider.style.animationPlayState = 'paused';
+        // });
+        // this.slider.addEventListener("mouseleave", () => {
+        //     this.slider.style.animationPlayState = "running";
+        // });
+        // Optional: Add click to pause/resume functionality
+        // this.slider.addEventListener("click", () => {
+        //     const isPaused = this.slider.style.animationPlayState === "paused";
+        //     this.slider.style.animationPlayState = isPaused
+        //         ? "running"
+        //         : "paused";
+        // });
+    }
+}
+
+// Initialize partners transition when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+    new PartnersTransition();
+});
